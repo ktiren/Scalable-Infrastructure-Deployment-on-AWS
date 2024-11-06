@@ -41,49 +41,49 @@ Before you begin, ensure you have the following:
 └── README.md
 ```
 ## Getting Started
-Clone the repository:
+**1. Clone the repository:** 
 ```
 git clone https://github.com/yourusername/scalable-infrastructure-aws.git
 cd scalable-infrastructure-aws
 ```
-Navigate to the desired deployment method:
+**2. Navigate to the desired deployment method:**
 
 - For Terraform: cd terraform
 - For CloudFormation: cd cloudformation
 
 ## Deployment with Terraform
-Initialize Terraform:
+**1. Initialize Terraform:**
 
 ```
 terraform init
 ```
-Review and customize variables:
+**2. Review and customize variables:**
 
 Edit the main.tf file to set your desired values for the variables.
 
-Plan the deployment:
+**3. Plan the deployment:**
 
 ```
 terraform plan
 ```
-Apply the deployment:
+**4. Apply the deployment:**
 
 ```
 terraform apply
 ```
-Confirm the action when prompted.
+**5. Confirm the action when prompted.**
 
-Verify the deployment:
+**6. Verify the deployment:**
 
 Once the deployment is complete, you can verify the created resources in the AWS Management Console.
 
 ## Deployment with CloudFormation
-Navigate to the CloudFormation directory:
+**1. Navigate to the CloudFormation directory:**
 
 ```
 cd cloudformation
 ```
-Deploy the CloudFormation stack:
+**2. Deploy the CloudFormation stack:**
 
 ```
 aws cloudformation create-stack --stack-name scalable-infrastructure --template-body file://template.yaml --capabilities CAPABILITY_NAMED_IAM
@@ -122,7 +122,7 @@ Contributions are welcome! Please fork the repository and use a feature branch. 
 5. Open a pull request
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/license/mit) file for details.
 
 Thank you for using this project! If you have any questions or suggestions, please feel free to open an issue or contact me.
 
